@@ -113,7 +113,7 @@ class DilatedParllelResidualBlockB(nn.Module):
         return output
 
 
-class DeepDTAF(nn.Module):
+class DeepPQK_QK(nn.Module):
 
     def __init__(self):
         super().__init__()
