@@ -12,8 +12,8 @@ import os
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 import itertools
-# from model3 import DeepDTAF
-from model_split_poc import DeepDTAF
+# from model import DeepPQK_QK
+from model_split_poc import DeepPQK_QK
 from datetime import datetime
 
 device = torch.device("cuda")
@@ -22,7 +22,7 @@ batch_converter = alphabet.get_batch_converter()
 model.eval()
 model = model.to(device)
 # 获取当前时间
-model2 = DeepDTAF()
+model2 = DeepPQK_QK()
 # model2.load_state_dict(torch.load('best_model.pt'))
 model2.load_state_dict(torch.load('best_model_split.pt'))
 model2.eval()
