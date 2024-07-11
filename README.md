@@ -24,12 +24,12 @@ pip install fair-esm
 ## **Model selection:**
 
 ```
-from model3 import DeepDTAF # Includes pocket modules
+from model import DeepPQK_QK # Includes pocket modules
 
 model2.load_state_dict(torch.load('best_model.pt'))  # Includes pocket modules
 
 
-from model_split_poc import DeepDTAF  # No pocket modules
+from model_split_poc import DeepPQK_QKF  # No pocket modules
 
 model2.load_state_dict(torch.load('best_model_split.pt'))  # No pocket modules
 ```
